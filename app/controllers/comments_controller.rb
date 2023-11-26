@@ -1,4 +1,7 @@
 class CommentsController < ApplicationController
+  http_basic_authenticate_with name: "tem", password: "v", except: [:index, :show]
+
+
   def create
     @article = Article.find(params[:article_id]) # まず記事を呼び出す
     @comment = @article.comments.create(comment_params)
