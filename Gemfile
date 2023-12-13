@@ -65,3 +65,10 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+
+
+# SQL用のgem
+group :production do
+  gem 'mysql2'
+end
