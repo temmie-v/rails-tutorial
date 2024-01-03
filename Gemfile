@@ -67,6 +67,7 @@ group :test do
 end
 
 
+gem 'mysql2'
 
 # SQL用のgem
 group :production do
