@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  http_basic_authenticate_with name: "tem", password: "v", except: [:index, :show]
+  http_basic_authenticate_with name: "tem", password: "v", only: :destroy
 
 
   def create
